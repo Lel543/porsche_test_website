@@ -1,0 +1,24 @@
+# robots.txt for Porsche website
+# Disallow: blockiert die Crawler vom Zugriff auf bestimmte Bereiche
+# Allow: erlaubt den Crawlern den Zugriff auf bestimmte Bereiche
+#https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt?hl=de
+
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /search
+Disallow: /login
+Disallow: /register
+
+# Blockiere Suchmaschinen-Bots von der Indexierung von speziellen Dateitypen
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.xls$
+
+Allow: /
+
+# Blockiere bestimmte Suchmaschinen-Crawler
+User-agent: BadBot
+Disallow: /
+
